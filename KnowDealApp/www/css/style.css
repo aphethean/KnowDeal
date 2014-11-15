@@ -1,0 +1,119 @@
+/* Empty. Add your own CSS if you like */
+
+.login-background {
+    background-image: url('../img/Background.png');
+	background-size: auto 100%;
+}
+
+/* iOS Specific Overrides to fix logo overlap */
+.platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+  margin-top: 25px;
+}
+.platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+  height: 90px;
+}
+.platform-ios7.platform-cordova:not(.fullscreen) .has-header {
+  top: 90px;
+}
+
+.avatar-sidebar .user-icon {
+box-sizing: border-box;
+height: 70px;
+width: 70px;
+border-radius: 50%;
+border: 1px solid rgb(208, 195, 183);
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+padding: 4px;
+overflow: hidden;
+background-color: rgb(255, 255, 255);
+}
+
+.avatar-sidebar .user-icon {
+position: absolute;
+top: 0px;
+right: 0px;
+}
+
+.avatar-sidebar .user-icon .profile-picture {
+height: 100%;
+width: 100%;
+border-radius: 50%;
+background: 50% 50% / cover no-repeat rgb(255, 255, 255);
+}
+
+#user-image {
+float: left;
+min-height: 95px;
+margin-top: 5px;
+margin-left: 0px;
+}
+
+#user-image .avatar2 {
+margin: 0px auto;
+float: left;
+}
+
+.avatar-sidebar {
+box-sizing: border-box;
+position: relative;
+width: 70px;
+height: 76px;
+}
+
+.flag2 {
+position:absolute;
+/*
+bottom: 0;
+left: 0;
+*/
+z-index: 3;
+}
+
+.avatar-sidebar .flag2 {
+padding-top: 1px;
+box-sizing: border-box;
+width: 24px;
+height: 24px;
+padding-bottom: 3px;
+background: url(https://klout.com/images/flag.svg) 50% 0% no-repeat transparent;
+text-align: center;
+line-height: 21px;
+vertical-align: middle;
+}
+
+.avatar-sidebar .flag2 .score {
+font: 13px/21px LatoBlack, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+color: rgb(255, 255, 255);
+}
+
+#user-image .username {
+font-size: 16px;
+line-height: 20px;
+padding: 18px 0px 20px;
+width: 100px;
+display: inline-block;
+margin-left: 15px;
+}
+
+#user-image .firstname {
+font-family: LatoBold;
+width: 120px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+#user-image .lastname {
+width: 120px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+#user-image .username > div {
+display: block;
+}
